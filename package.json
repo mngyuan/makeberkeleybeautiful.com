@@ -1,0 +1,22 @@
+{
+  "name": "makeberkeleybeautiful.com",
+  "version": "1.0.0",
+  "description": "Innovative Design's application",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phorust/makeberkeleybeautiful.com"
+  },
+  "author": "Kevin Lee",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/phorust/makeberkeleybeautiful.com/issues"
+  },
+  "homepage": "https://github.com/phorust/makeberkeleybeautiful.com#readme",
+  "dependencies": {
+    "babel-core": "^5.8.22"
+  }
+}
