@@ -11,44 +11,57 @@ body {
   background: url('i/Wallpaper.png');
 }
 
+#mbb-logo {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px 40px;
+
+  padding-top: 0;
+  padding-bottom: 30px;
+  opacity: 0;
+  transition: all 1.3s ease-out;
+}
+
+#mbb-logo.loaded {
+  opacity: 1;
+  padding-top: 30px;
+  padding-bottom: 0;
+}
+
+body.mbb-cyan svg path {
+  fill: #0293C0;
+}
+body.mbb-cyan #mbb-picker li {
+  background-color: #0293C0;
+}
+
+body.mbb-yellow svg path {
+  fill: #E8B03B;
+}
+body.mbb-yellow #mbb-picker li {
+  background-color: #E8B03B;
+}
+
+body.mbb-magenta svg path {
+  fill: #C93354;
+}
+body.mbb-magenta #mbb-picker li {
+  background-color: #C93354;
+}
+
+body.mbb-black svg path {
+  fill: #252930;
+}
+body.mbb-black #mbb-picker li {
+  background-color: #C93354;
+}
+
 svg path {
   fill: #0293C0;
   /*fill: rgba(2, 147, 193, 0);*/
   transition: all 1.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
   stroke: white;
   stroke-width: 2px;
-  opacity: 1;
-}
-
-path#logo-top {
-  stroke-dasharray: 0 510px;
-  stroke-dashoffset: 75px;
-  stroke-width: 125px;
-}
-
-svg:hover path#logo-top {
-  stroke-dasharray: 510px 0;
-  opacity: 0;
-  /*fill: rgba(2, 147, 193, 1);*/
-}
-
-path#logo-middle {
-  stroke-dasharray: 0 375px;
-  stroke-width: 78px;
-}
-
-svg:hover path#logo-middle {
-  stroke-dasharray: 375px 0;
-  opacity: 1;
-}
-
-path#logo-bottom {
-  stroke-dasharray: 0 285px;
-  stroke-width: 93px;
-}
-
-svg:hover path#logo-bottom {
-  stroke-dasharray: 285px 0;
   opacity: 1;
 }
 
@@ -80,6 +93,6 @@ svg:hover path#logo-bottom {
   display: none;
 }
 
-#mbb-picker .active {
+html body #mbb-picker .active {
   background-color: #ddd;
 }
