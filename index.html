@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
   <!-- <script src="https://fb.me/react-0.13.3.js"></script> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -20,22 +21,47 @@
   <path id='logo-bottom' d="M217.4,296.7c-22.7,3-40.2,22.4-40.2,45.9c0,25.6,20.7,46.3,46.3,46.3c23.5,0,42.9-17.5,45.9-40.1
   	C242.2,345.6,220.6,324,217.4,296.7z"/>
   </svg>
+  <div id='content' class='container'>
+    <div class='row'>
+      <h1>Welcome home.</h1>
+      <p>
+        Innovative Design is your creative home at Cal. As Cal's student-run
+        creative agency, we're committed to ____ and your growth as a designer
+        something something how do we balance professionalism with inclusiveness
+        and growth or is there a balance that can be struck at all or do we have to
+        forgo one for the other?
+      </p>
+    </div>
 
-  <h1>Welcome home.</h1>
-  <p>
-    Innovative Design is your creative home at Cal. As Cal's student-run
-    creative agency, we're committed to ____ and your growth as a designer
-    something something how do we balance professionalism with inclusiveness
-    and growth or is there a balance that can be struck at all or do we have to
-    forgo one for the other?
-  </p>
+    <div id='mbb-picker' class='row'>
+      <ul class='mbb-center'>
+        <li>Club</li>
+        <li>DeCal</li>
+      </ul>
+    </div>
 
-  <nav>
-    <ul>
-      <li>Club</li>
-      <li>DeCal</li>
-    </ul>
-  </nav>
+    <div class='row mbb-center'>
+      <div class='col s2'>&nbsp;<!-- to center --></div>
+      <form class='col s8'>
+        <div class='row'>
+          <div class='input-field col s6'>
+            <input name='first_name' id='first_name' type='text' class='validate' />
+            <label for='first_name'>First name</label>
+          </div>
+          <div class='input-field col s6'>
+            <input name='last_name' id='last_name' type='text' class='validate' />
+            <label for='last_name'>Last name</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="email" type="email" class="validate">
+            <label for="email">Email</label>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
 
   <script type='text/babel' src='src/mbb.js'></script>
 </body>

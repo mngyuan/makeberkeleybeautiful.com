@@ -47,3 +47,25 @@ svg:hover path#logo-bottom {
   stroke-dasharray: 285px 0;
   opacity: 1;
 }
+
+#content {
+  margin: 0 auto;
+  width: 600px;
+}
+
+.mbb-center {
+  margin: 0 auto;
+}
+
+#mbb-picker li {
+  display: inline-block;
+  text-align: center;
+  background-color: #0293C0;
+  padding: 5px 8px;
+}
+
+#mbb-picker ul {
+  width: 200px;
+  text-align: center;
+  font-size: 1.2em;
+}
