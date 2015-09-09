@@ -7,6 +7,10 @@ body, html {
   font-family: 'Lato', sans-serif;
 }
 
+body {
+  background: url('i/Wallpaper.png');
+}
+
 svg path {
   fill: #0293C0;
   /*fill: rgba(2, 147, 193, 0);*/
@@ -50,7 +54,7 @@ svg:hover path#logo-bottom {
 
 #content {
   margin: 0 auto;
-  width: 600px;
+  max-width: 600px;
 }
 
 .mbb-center {
@@ -62,10 +66,20 @@ svg:hover path#logo-bottom {
   text-align: center;
   background-color: #0293C0;
   padding: 5px 8px;
+
+  transition: all 0.3s ease;
 }
 
 #mbb-picker ul {
   width: 200px;
   text-align: center;
   font-size: 1.2em;
+}
+
+#mbb-decal {
+  display: none;
+}
+
+#mbb-picker .active {
+  background-color: #ddd;
 }
