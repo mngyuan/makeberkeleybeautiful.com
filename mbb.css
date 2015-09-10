@@ -11,6 +11,13 @@ body {
   background: url('i/Wallpaper.png');
 }
 
+a {
+  color: #333;
+}
+a:visited {
+  color: #333;
+}
+
 #mbb-logo {
   max-width: 420px;
   margin: 0 auto;
