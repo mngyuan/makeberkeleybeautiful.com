@@ -40,8 +40,8 @@
     <br>
     <div id='mbb-picker' class='row'>
       <ul class='mbb-center'>
-        <li id='mbb-picker-club'>Club</li>
-        <li id='mbb-picker-decal'>DeCal</li>
+        <li id='mbb-picker-club'>Principles</li>
+        <li id='mbb-picker-decal'>Intro</li>
       </ul>
     </div>
 
@@ -241,23 +241,144 @@
           </button>
         </div>
       </form>
-      <!-- CLUB -->
-      <form id='mbb-club' class='col s12'>
+      <!-- PRINCIPLES -->
+      <form action='#' id='mbb-pr' class='col s12'>
+        <div class='row'>
+          <div class='input-field col s12'>
+            <input name='pr-decal-code' id='pr-decal-code' type='text' class='validate' required/>
+            <label for='pr-decal-code'>Enter the code given at the info session</label>
+          </div>
+        </div>
         <div class='row'>
           <div class='input-field col s6'>
-            <input name='first_name' id='first_name' type='text' class='validate' />
-            <label for='first_name'>First name</label>
+            <input name='pr-first_name' id='pr-first_name' type='text' class='validate' required/>
+            <label for='pr-first_name'>First name</label>
           </div>
           <div class='input-field col s6'>
-            <input name='last_name' id='last_name' type='text' class='validate' />
-            <label for='last_name'>Last name</label>
+            <input name='pr-last_name' id='pr-last_name' type='text' class='validate' required/>
+            <label for='pr-last_name'>Last name</label>
           </div>
         </div>
         <div class="row">
           <div class="input-field col s12">
-            <input id="email" type="email" class="validate">
-            <label for="email">Email</label>
+            <input id="pr-email" type="email" class="validate" required>
+            <label for="pr-email">Email</label>
           </div>
+        </div>
+        <div class='row'>
+          <div class='input-field col s6'>
+            <input name='pr-decal-major' id='pr-decal-major' type='text' class='validate' required/>
+            <label for='pr-decal-major'>Majors</label>
+          </div>
+          <div class='input-field col s6'>
+            <input name='pr-decal-id' id='pr-decal-id' type='text' class='validate' required/>
+            <label for='pr-decal-id'>Student ID</label>
+          </div>
+        </div>
+        <h5>What year are you?</h5>
+        <div class='row'>
+          <div class="col l12">
+            <p>
+            <input name='pr-decal-year' type='radio' id='pr-decal-year-f'/>
+            <label for='pr-decal-year-f'>Freshman</label>
+            </p>
+
+            <p>
+            <input name='pr-decal-year' type='radio' id='pr-decal-year-so'/>
+            <label for='pr-decal-year-so'>Sophomore</label>
+            </p>
+
+            <p>
+            <input name='pr-decal-year' type='radio' id='pr-decal-year-j'/>
+            <label for='pr-decal-year-j'>Junior</label>
+            </p>
+
+            <p>
+            <input name='pr-decal-year' type='radio' id='pr-decal-year-sr'/>
+            <label for='pr-decal-year-sr'>Senior</label>
+            </p>
+          </div>
+        </div>
+        <h5>Do you need lower of upper division units?</h5>
+          <p>Generally, freshman/sophomore standing = lower division and junior/senior standing = upper division. Please check Bear Facts if you are unsure about your status.</p>
+        <div class="row">
+          <div class="col l12">
+          <p>
+          <input name='pr-unit-type' type='radio' id='pr-lower'/>
+          <label for='pr-lower'>Lower Division Units</label>
+          </p>
+
+          <p>
+          <input name='pr-unit-type' type='radio' id='pr-upper'/>
+          <label for='pr-upper'>Upper Division Units</label>
+          </p>
+          </div>
+        </div>
+        <h5>Did you apply for the Intro to Photoshop and Illustrator DeCal?</h5>
+        <div class='row'>
+          <div class="col l12">
+            <p>
+            <input name='pr-decal-before' type='radio' id='pr-decal-before-y' required/>
+            <label for='pr-decal-before-y'>Yes</label>
+            </p>
+
+            <p>
+            <input name='pr-decal-before' type='radio' id='pr-decal-before-n' required/>
+            <label for='pr-decal-before-n'>No</label>
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <h5>Briefly describe your past experiences with Photoshop/Illustrator/InDesign.</h5>
+            <textarea id="pr-experience" class="materialize-textarea"></textarea>
+            <label for="pr-experience"></label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col l12">
+            <h5>Email 2-3 pieces of work demonstrating your experience to innod.decal@gmail.com with the subject "Last Name, First Name - Graphic Design DeCal".</h5>
+            <p>Choose a few pieces that best demonstrate your technical abilities. Please include at least one PSD or AI file.</p>
+            <p>
+              <input type="checkbox" id="pr-work-sent" />
+              <label for="pr-work-sent">Yes, I have sent an email to innod.decal@gmail.com!</label>
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <h5>Describe your design aesthetic in three words.</h5>
+            <textarea id="pr-aesthetic" class="materialize-textarea"></textarea>
+            <label for="pr-aesthetic"></label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <h5>Where do you find inspiration?</h5>
+            <p>Describe your inspiration in a tweet (140 characters max).</p>
+            <textarea id="pr-inspiration" class="materialize-textarea" length="140"></textarea>
+            <label for="pr-inspiration"></label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <h5>If you were a superhero, what would your superpower be?</h5>
+            <p>Describe your superpower in a tweet (140 characters max).</p>
+            <textarea id="pr-superhero" class="materialize-textarea" length="140"></textarea>
+            <label for="pr-superhero"></label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <h5>Anything else?</h5>
+            <p>If you want to learn anything in particular, please let us know here!</p>
+            <textarea id="pr-questions" class="materialize-textarea"></textarea>
+            <label for="pr-questions"></label>
+          </div>
+        </div>
+        <div class='row'>
+          <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+          </button>
         </div>
       </form>
     </div>

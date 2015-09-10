@@ -83,11 +83,10 @@ svg path {
   background-color: #0293C0;
   padding: 5px 8px;
   text-align: center;
-  width: 80px;
+  width: 90px;
 
   margin: 0 4px;
   border-radius: 3px;
-  font-size: 1.1em;
 
   transition: all 0.3s ease;
 }
