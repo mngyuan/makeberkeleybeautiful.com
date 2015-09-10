@@ -11,7 +11,7 @@ body {
   background: url('i/Wallpaper.png');
 }
 
-a {
+body a { /* more specific to override materialize... */
   color: #333;
 }
 a:visited {
