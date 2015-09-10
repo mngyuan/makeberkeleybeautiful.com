@@ -37,6 +37,29 @@ $(document).ready(() => {
     }
   }, 5000);
 
+  $('#mbb-pr').submit(_ => {
+    console.log("called");
+    $.post(
+      'https://script.google.com/macros/s/AKfycbw_ZcSMukm4aNV0LXjjoWVLULn-EGW3wKhqYLdXMNmdcND6mJU/exec',
+      {
+        code: $('#pr-decal-code').val(),
+        firstName: $('#pr-first_name').val(),
+        lastName: $('#pr-last_name').val(),
+        email: $('#pr-email').val(),
+        major: $('#pr-decal-major').val(),
+        year: $("input[type='radio'][name='pr-decal-year']:checked").val(),
+        unitType: $("input[type='radio'][name='pr-unit-type']:checked").val(),
+        appliedBothDecal: $("input[type='radio'][name='pr-decal-before']:checked").val(),
+        experience: $('#pr-experience').val(),
+        workSent: $('#pr-work-sent').is(':checked'),
+        aesthetic: $('#pr-aesthetic').val(),
+        inspiration: $('#pr-inspiration').val(),
+        superhero: $('#pr-superhero').val(),
+        questions: $('#pr-questions').val(),
+      }
+    );
+  });
+
   $('#mbb-decal').submit(_ => {
     $.post(
       'https://script.google.com/macros/s/AKfycbxoE_55b6K0AwFtTaMA-ix7COfp3-9P0ZTdzRrs2JvKQwxL05M/exec',
