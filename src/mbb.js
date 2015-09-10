@@ -17,7 +17,6 @@ $(document).ready(() => {
   $('#mbb-logo').addClass('loaded');
 
   setInterval(_ => {
-    console.log($('body').attr('class'));
     switch ($('body').attr('class')) {
       case 'mbb-cyan':
         $('body').attr('class', 'mbb-yellow');
@@ -38,7 +37,6 @@ $(document).ready(() => {
   }, 5000);
 
   $('#mbb-pr').submit(_ => {
-    console.log("called");
     $.post(
       'https://script.google.com/macros/s/AKfycbw_ZcSMukm4aNV0LXjjoWVLULn-EGW3wKhqYLdXMNmdcND6mJU/exec',
       {
@@ -56,6 +54,9 @@ $(document).ready(() => {
         inspiration: $('#pr-inspiration').val(),
         superhero: $('#pr-superhero').val(),
         questions: $('#pr-questions').val(),
+      },
+      res => {
+        $("#mbb-pr").append('Thanks for applying!');
       }
     );
   });
@@ -87,6 +88,9 @@ $(document).ready(() => {
         link: $('#decal-link').val(),
         mean: $('#decal-mean').val(),
         sudden: $('#decal-sudden').val(),
+      },
+      res => {
+        $("#mbb-decal").append('Thanks for applying!');
       }
     );
   });
