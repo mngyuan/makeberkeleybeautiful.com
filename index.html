@@ -10,7 +10,7 @@
   <!-- <script src="https://fb.me/react-0.13.3.js"></script> -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
-<body>
+<body class='mbb-cyan'>
   <div id='content' class='container'>
     <div id='mbb-logo'>
       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -36,6 +36,8 @@
       </p>
     </div>
 
+    <br>
+    <br>
     <div id='mbb-picker' class='row'>
       <ul class='mbb-center'>
         <li id='mbb-picker-club'>Club</li>
@@ -44,9 +46,14 @@
     </div>
 
     <div class='row mbb-center'>
-      <div class='col s2'>&nbsp;<!-- to center --></div>
       <!-- DECAL -->
-      <form id='mbb-decal' class='col s8'>
+      <form action='#' id='mbb-decal' class='col s12'>
+        <div class='row'>
+          <div class='input-field col s12'>
+            <input name='decal-code' id='decal-code' type='text' class='validate' />
+            <label for='decal-code'>Enter the code given at the info session</label>
+          </div>
+        </div>
         <div class='row'>
           <div class='input-field col s6'>
             <input name='first_name' id='first_name' type='text' class='validate' />
@@ -63,9 +70,67 @@
             <label for="email">Email</label>
           </div>
         </div>
+        <div class='row'>
+          <div class='input-field col s6'>
+            <input name='decal-major' id='decal-major' type='text' class='validate' />
+            <label for='decal-major'>Majors</label>
+          </div>
+          <div class='input-field col s6'>
+            <input name='decal-id' id='decal-id' type='text' class='validate' />
+            <label for='decal-id'>Student ID</label>
+          </div>
+        </div>
+        <p>What year are you?</p>
+        <div class='row'>
+          <p>
+          <input name='decal-year' type='radio' id='decal-year-f'/>
+          <label for='decal-year-f'>Freshman</label>
+          </p>
+
+          <p>
+          <input name='decal-year' type='radio' id='decal-year-so'/>
+          <label for='decal-year-so'>Sophomore</label>
+          </p>
+
+          <p>
+          <input name='decal-year' type='radio' id='decal-year-j'/>
+          <label for='decal-year-j'>Junior</label>
+          </p>
+
+          <p>
+          <input name='decal-year' type='radio' id='decal-year-sr'/>
+          <label for='decal-year-sr'>Senior</label>
+          </p>
+        </div>
+        <p>Have you applied for this DeCal before?<p>
+        <div class='row'>
+          <p>
+          <input name='decal-before' type='radio' id='decal-before-y'/>
+          <label for='decal-before-y'>Yes</label>
+          </p>
+
+          <p>
+          <input name='decal-before' type='radio' id='decal-before-n'/>
+          <label for='decal-before-n'>No</label>
+          </p>
+        </div>
+        <div class='row'>
+          <p></p>
+          <div class="input-field col s12">
+            <input id="decal-applied" type="text" class="validate">
+            <label for="decal-applied">If yes, how many times have you applied?</label>
+          </div>
+        </div>
+        <div class='row'>
+          <p></p>
+          <div class="input-field col s12">
+            <input id="decal-units" type="text" class="validate">
+            <label for="email">How many units are you planning to take this semester, NOT including this class?</label>
+          </div>
+        </div>
       </form>
       <!-- CLUB -->
-      <form id='mbb-club' class='col s8'>
+      <form id='mbb-club' class='col s12'>
         <div class='row'>
           <div class='input-field col s6'>
             <input name='first_name' id='first_name' type='text' class='validate' />
