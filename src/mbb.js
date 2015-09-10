@@ -39,7 +39,7 @@ $(document).ready(() => {
 
   $('#mbb-decal').submit(_ => {
     $.post(
-      url,
+      'https://script.google.com/macros/s/AKfycbxoE_55b6K0AwFtTaMA-ix7COfp3-9P0ZTdzRrs2JvKQwxL05M/exec',
       {
         code: $('#decal-code').val(),
         firstName: $('#decal-first_name').val(),
@@ -47,8 +47,8 @@ $(document).ready(() => {
         email: $('#decal-email').val(),
         major: $('#decal-major').val(),
         studentID: $('#decal-id').val(),
-        year: $('#decal-year').val(), // fixme
-        appliedBefore: $('#decal-before').val(),
+        year: $("input[type='radio'][name='decal-year']:checked").val(),
+        appliedBefore: $("input[type='radio'][name='decal-before']:checked").val(),
         appliedTimes: $('#decal-applied').val(),
         units: $('#decal-units').val(),
         usedIllustrator: $('#decal-illustrator').is(':checked'),
@@ -58,7 +58,7 @@ $(document).ready(() => {
         usedInkscape: $('#decal-inkscape').is(':checked'),
         usedOther: $('#decal-other').is(':checked'),
         usedOtherText: $('#decal-other-text').val(),
-        experienceLevel: $('#decal-exp').val(), // fixme
+        experienceLevel: $("input[type='radio'][name='decal-exp']:checked").val(),
         why: $('#decal-why').val(),
         real: $('#decal-real').val(),
         link: $('#decal-link').val(),
