@@ -57,7 +57,7 @@ $(document).ready(() => {
       },
       res => {
         $("#mbb-pr").append('Thanks for applying!');
-        window.location.replace('/submitted.html');
+        window.location.replace('submitted.html');
       }
     );
   });
@@ -92,7 +92,7 @@ $(document).ready(() => {
       },
       res => {
         $("#mbb-decal").append('Thanks for applying!');
-        window.location.replace('/submitted.html');
+        window.location.replace('submitted.html');
       }
     );
   });
